@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索筛选-欧美高清电影</title>
+  <meta name="description" content="搜索欧美高清电影片库，可按片名、标签、地区、年份和类型筛选。">
+  <meta name="keywords" content="欧美高清电影,欧美电影,高清电影,电影片库,免费电影,在线观看,电影分类,电影搜索,电影筛选">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html" aria-label="欧美高清电影">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">
+        <strong>欧美高清电影</strong>
+        <small>高清电影片库</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索筛选</a>
+      <div class="nav-dropdown">
+        <button type="button">片库入口</button>
+        <div class="dropdown-panel">
+          <a href="./category-01.html">欧美精选</a>
+          <a href="./category-02.html">高清热映</a>
+          <a href="./category-03.html">口碑佳片</a>
+          <a href="./category-04.html">经典回看</a>
+          <a href="./category-05.html">都市光影</a>
+          <a href="./category-06.html">情感故事</a>
+          <a href="./category-07.html">冒险时刻</a>
+          <a href="./category-08.html">犯罪谜案</a>
+        </div>
+      </div>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索电影..." aria-label="搜索电影">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-controls="mobile-panel" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./ranking.html">排行榜</a>
+    <a href="./search.html">搜索筛选</a>
+    <a href="./category-01.html">欧美精选</a>
+    <a href="./category-02.html">高清热映</a>
+    <a href="./category-03.html">口碑佳片</a>
+    <a href="./category-04.html">经典回看</a>
+    <a href="./category-05.html">都市光影</a>
+    <a href="./category-06.html">情感故事</a>
+    <a href="./category-07.html">冒险时刻</a>
+    <a href="./category-08.html">犯罪谜案</a>
+    <form action="./search.html" method="get" class="mobile-search">
+      <input type="search" name="q" placeholder="搜索电影..." aria-label="搜索电影">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero compact-hero">
+    <div class="container">
+      <nav class="breadcrumb"><a href="./index.html">首页</a><span>›</span>搜索筛选</nav>
+      <span class="eyebrow">Search</span>
+      <h1>搜索与筛选</h1>
+      <p>输入片名、地区、类型、年份或标签，快速定位想看的高清电影内容。</p>
+      <form class="search-panel" id="search-form">
+        <input type="search" id="search-input" name="q" placeholder="片名、标签、简介..." autocomplete="off">
+        <select id="type-filter" name="type" aria-label="按类型筛选">
+          <option value="">全部类型</option>
+          <option value="Movie">Movie</option>
+          <option value="OVA">OVA</option>
+          <option value="TV 动画">TV 动画</option>
+          <option value="TV剧集">TV剧集</option>
+          <option value="传记片">传记片</option>
+          <option value="剧集">剧集</option>
+          <option value="剧集 剧情喜剧">剧集 剧情喜剧</option>
+          <option value="剧集/动画">剧集/动画</option>
+          <option value="剧集/真人秀">剧集/真人秀</option>
+          <option value="剧集/短片">剧集/短片</option>
+          <option value="剧集/第一季">剧集/第一季</option>
+          <option value="剧集/综艺">剧集/综艺</option>
+          <option value="动漫">动漫</option>
+          <option value="动画">动画</option>
+          <option value="动画/OVA">动画/OVA</option>
+          <option value="动画/短片">动画/短片</option>
+          <option value="动画OVA">动画OVA</option>
+          <option value="动画剧集">动画剧集</option>
+          <option value="动画片">动画片</option>
+          <option value="动画特辑">动画特辑</option>
+          <option value="动画电影">动画电影</option>
+          <option value="动画短片">动画短片</option>
+          <option value="电影">电影</option>
+          <option value="电影 动作">电影 动作</option>
+          <option value="电影 宗教悬疑">电影 宗教悬疑</option>
+          <option value="电影(动画)">电影(动画)</option>
+          <option value="电影/剧集">电影/剧集</option>
+          <option value="电影/动画">电影/动画</option>
+          <option value="电影/电视特别篇">电影/电视特别篇</option>
+          <option value="电影/网络电影">电影/网络电影</option>
+          <option value="电影/音乐剧">电影/音乐剧</option>
+          <option value="电视剧">电视剧</option>
+          <option value="电视剧 (40集)">电视剧 (40集)</option>
+          <option value="电视剧 (短剧)">电视剧 (短剧)</option>
+          <option value="电视剧 (迷你剧)">电视剧 (迷你剧)</option>
+          <option value="电视剧 (限定剧)">电视剧 (限定剧)</option>
+          <option value="电视剧 年代/家庭">电视剧 年代/家庭</option>
+          <option value="电视剧/布袋戏">电视剧/布袋戏</option>
+          <option value="电视剧/电影">电视剧/电影</option>
+          <option value="电视剧/第一季">电视剧/第一季</option>
+          <option value="电视剧/迷你剧">电视剧/迷你剧</option>
+          <option value="电视电影">电视电影</option>
+          <option value="短剧">短剧</option>
+          <option value="短片/动画">短片/动画</option>
+          <option value="纪录剧集">纪录剧集</option>
+          <option value="纪录片">纪录片</option>
+          <option value="纪录片/剧集">纪录片/剧集</option>
+          <option value="纪录片/音乐">纪录片/音乐</option>
+          <option value="纪录片剧集">纪录片剧集</option>
+          <option value="纪录电影">纪录电影</option>
+          <option value="综艺">综艺</option>
+          <option value="综艺/特别篇">综艺/特别篇</option>
+          <option value="综艺/电影">综艺/电影</option>
+          <option value="综艺/真人秀">综艺/真人秀</option>
+          <option value="综艺/音乐">综艺/音乐</option>
+          <option value="网络剧">网络剧</option>
+          <option value="网络电影">网络电影</option>
+          <option value="脱口秀特辑">脱口秀特辑</option>
+          <option value="迷你剧">迷你剧</option>
+        </select>
+        <select id="region-filter" name="region" aria-label="按地区筛选">
+          <option value="">全部地区</option>
+          <option value="中东/美国合拍">中东/美国合拍</option>
+          <option value="中国">中国</option>
+          <option value="中国内地">中国内地</option>
+          <option value="中国台湾">中国台湾</option>
+          <option value="中国台湾,日本">中国台湾,日本</option>
+          <option value="中国台湾/日本">中国台湾/日本</option>
+          <option value="中国大陆">中国大陆</option>
+          <option value="中国大陆,泰国">中国大陆,泰国</option>
+          <option value="中国大陆/中国香港">中国大陆/中国香港</option>
+          <option value="中国大陆/俄罗斯">中国大陆/俄罗斯</option>
+          <option value="中国大陆/日本">中国大陆/日本</option>
+          <option value="中国大陆/韩国">中国大陆/韩国</option>
+          <option value="中国大陆/香港">中国大陆/香港</option>
+          <option value="中国大陆/马来西亚">中国大陆/马来西亚</option>
+          <option value="中国香港">中国香港</option>
+          <option value="中国香港/中国大陆">中国香港/中国大陆</option>
+          <option value="中国香港/台湾">中国香港/台湾</option>
+          <option value="中国香港/日本">中国香港/日本</option>
+          <option value="中国香港/法国">中国香港/法国</option>
+          <option value="中国香港/澳门">中国香港/澳门</option>
+          <option value="丹麦">丹麦</option>
+          <option value="丹麦,瑞典">丹麦,瑞典</option>
+          <option value="丹麦/挪威">丹麦/挪威</option>
+          <option value="丹麦/瑞典">丹麦/瑞典</option>
+          <option value="乌克兰/美国">乌克兰/美国</option>
+          <option value="伊朗">伊朗</option>
+          <option value="伊朗,法国">伊朗,法国</option>
+          <option value="伊朗/法国">伊朗/法国</option>
+          <option value="俄罗斯">俄罗斯</option>
+          <option value="俄罗斯,乌克兰">俄罗斯,乌克兰</option>
+          <option value="俄罗斯/乌克兰">俄罗斯/乌克兰</option>
+          <option value="俄罗斯/德国">俄罗斯/德国</option>
+          <option value="全球 (多国合拍)">全球 (多国合拍)</option>
+          <option value="加拿大">加拿大</option>
+          <option value="加拿大/中国大陆">加拿大/中国大陆</option>
+          <option value="加拿大/爱尔兰">加拿大/爱尔兰</option>
+          <option value="匈牙利">匈牙利</option>
+          <option value="匈牙利/法国">匈牙利/法国</option>
+          <option value="北欧">北欧</option>
+          <option value="印度">印度</option>
+        </select>
+        <select id="year-filter" name="year" aria-label="按年份筛选">
+          <option value="">全部年份</option>
+          <option value="2030">2030</option>
+          <option value="2029">2029</option>
+          <option value="2028">2028</option>
+          <option value="2027">2027</option>
+          <option value="2026">2026</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+          <option value="2011">2011</option>
+          <option value="2010">2010</option>
+          <option value="2009">2009</option>
+          <option value="2008">2008</option>
+          <option value="2007">2007</option>
+          <option value="2006">2006</option>
+          <option value="2005">2005</option>
+          <option value="2004">2004</option>
+          <option value="2003">2003</option>
+          <option value="2002">2002</option>
+          <option value="2001">2001</option>
+        </select>
+        <button type="submit">筛选</button>
+      </form>
+    </div>
+  </section>
+  <section class="section-block">
+    <div class="container search-toolbar">
+      <h2>匹配影片</h2>
+      <button class="ghost-button small" id="clear-search" type="button">重置筛选</button>
+    </div>
+    <div class="container movie-grid" id="search-results"></div>
+    <div class="container center-actions">
+      <button class="primary-button" id="load-more" type="button">加载更多</button>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">
+        <span class="brand-mark">▶</span>
+        <strong>欧美高清电影</strong>
+      </a>
+      <p>欧美高清电影栏目整理欧美影片内容，覆盖动作、剧情、科幻等常见类型。</p>
+    </div>
+    <div>
+      <h3>快速导航</h3>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">影片排行</a>
+      <a href="./search.html">搜索筛选</a>
+    </div>
+    <div>
+      <h3>热门分类</h3>
+      <a href="./category-01.html">欧美精选</a>
+      <a href="./category-02.html">高清热映</a>
+      <a href="./category-03.html">口碑佳片</a>
+      <a href="./category-04.html">经典回看</a>
+    </div>
+    <div>
+      <h3>片库简介</h3>
+      <p>覆盖电影、剧集、综艺等多类型内容，按地区、年份、类型和标签建立清晰入口。</p>
+      <button class="back-top" type="button">返回顶部</button>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 欧美高清电影 · 免费在线观看</div>
+</footer>
+<script src="./assets/js/site.js"></script>
+<script src="./assets/js/search-index.js"></script>
+<script src="./assets/js/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

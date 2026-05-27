@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影片搜索-国产精选电视剧-精选剧集片库分类-全集高清在线播放</title>
+    <meta name="description" content="国产精选电视剧片库搜索，支持按标题、题材、年份、地区与标签查找内容。">
+    <meta name="keywords" content="搜索,国产精选电视剧,国产电视剧,精选剧集,剧集片库,全集播放,高清播放,国产剧">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="高清剧集大全">
+                <span class="brand-mark">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                </span>
+                <span class="brand-copy">
+                    <strong>高清剧集大全</strong>
+                    <small>国产精选电视剧免费在线观看</small>
+                </span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                <a class="nav-link" href="index.html">首页</a>
+                <a class="nav-link" href="categories.html">分类</a>
+                <a class="nav-link" href="ranking.html">排行榜</a>
+                <a class="nav-link is-active" href="search.html">搜索</a>
+            </nav>
+            <form class="header-search" data-search-form action="search.html">
+                <input type="search" name="q" placeholder="搜索剧名、题材、地区" autocomplete="off">
+                <button type="submit" aria-label="搜索">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M21 21l-4.3-4.3"></path>
+                        <circle cx="11" cy="11" r="7"></circle>
+                    </svg>
+                </button>
+            </form>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-panel" data-mobile-panel>
+            <a class="mobile-link" href="index.html">首页</a>
+            <a class="mobile-link" href="categories.html">分类</a>
+            <a class="mobile-link" href="ranking.html">排行榜</a>
+            <a class="mobile-link is-active" href="search.html">搜索</a>
+            <form class="mobile-search" data-search-form action="search.html">
+                <input type="search" name="q" placeholder="输入关键词搜索">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero compact-hero search-hero">
+            <div>
+                <span class="section-kicker">Search</span>
+                <h1>影片搜索</h1>
+                <p>输入剧名、地区、年份、题材或标签，快速检索片库内容。</p>
+            </div>
+        </section>
+        <section class="section-wrap search-page">
+            <form class="search-panel" data-page-search-form>
+                <input type="search" id="searchInput" name="q" placeholder="搜索剧名、题材、地区、标签" autocomplete="off">
+                <button class="primary-button" type="submit">搜索</button>
+            </form>
+            <div class="movie-grid" id="searchResults"></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="footer-logo" href="index.html">
+                    <span class="brand-mark small">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                    </span>
+                    <strong>高清剧集大全</strong>
+                </a>
+                <p>国产精选电视剧栏目按口碑、热度和题材整理，覆盖多类国产剧集内容。</p>
+            </div>
+            <div class="footer-col">
+                <h3>片库入口</h3>
+                <a href="index.html">首页推荐</a>
+                <a href="categories.html">分类总览</a>
+                <a href="ranking.html">热度排行</a>
+                <a href="search.html">影片搜索</a>
+            </div>
+            <div class="footer-col">
+                <h3>热门分类</h3>
+                    <a href="category-featured-drama.html">精选剧集</a>
+                    <a href="category-suspense-thriller.html">悬疑惊悚</a>
+                    <a href="category-family-emotion.html">家庭情感</a>
+                    <a href="category-action-adventure.html">动作冒险</a>
+                    <a href="category-comedy-light.html">喜剧轻喜</a>
+                    <a href="category-scifi-fantasy.html">科幻奇幻</a>
+            </div>
+            <div class="footer-col">
+                <h3>观看体验</h3>
+                <p>按题材、地区、年份与热度浏览精选剧集，详情页提供剧情、短评与相关推荐。</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 高清剧集大全</span>
+            <span>国产精选电视剧-精选剧集片库分类-全集高清在线播放</span>
+        </div>
+    </footer>
+    <script src="assets/search-data.js"></script>
+    <script src="assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
